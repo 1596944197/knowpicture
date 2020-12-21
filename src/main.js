@@ -1,7 +1,11 @@
 import Vue from 'vue'
 import App from './App'
+import request from './utils/request'
 
 Vue.config.productionTip = false
+
+// 进行原型链挂载
+Vue.prototype.request=request
 
 App.mpType = 'app'
 
